@@ -8,7 +8,7 @@ CREATE TABLE `usuarios` (
 );
 
 CREATE TABLE `notas` (
-   `id` INT,
+   `id` INT AUTO_INCREMENT,
    `titulo` VARCHAR(100) NOT NULL,
    `fecha_creacion` TIMESTAMP DEFAULT CURRENT_TIMESTAMP,
    `fecha_mod` TIMESTAMP DEFAULT CURRENT_TIMESTAMP,
@@ -24,7 +24,7 @@ CREATE TABLE `categoria` (
 );
 
 CREATE TABLE `gestion_de_notas` (
-   `id` INT,
+   `id` INT AUTO_INCREMENT,
    `usuario_id` INT NOT NULL,
    `notas_id` INT NOT NULL,
    PRIMARY KEY (`id`)
